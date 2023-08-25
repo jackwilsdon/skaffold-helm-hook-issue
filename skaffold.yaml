@@ -1,0 +1,9 @@
+apiVersion: skaffold/v4beta5
+kind: Config
+manifests:
+  helm:
+    releases:
+      - name: my-release
+        chartPath: my-chart
+deploy:
+  kubectl: {}
